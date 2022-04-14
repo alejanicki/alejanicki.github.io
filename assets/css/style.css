@@ -81,7 +81,7 @@ a {
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 20;
     border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
@@ -141,7 +141,89 @@ a {
     padding: 10rem var(--gap);
 }
 
+.intro-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    margin-left: 10rem;
+}
 
+.intro-text-content {
+    padding-bottom: 12rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
 
+.intro-text-content h2 {
+    font-size: 5rem;
+    text-align: center;
+}
 
+.intro-text-content p {
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.gallery {
+    padding-left: 5.5rem;
+    display: flex;
+    height: 100vh;
+    width: 10rem;
+    margin: 0;
+    position: relative;
+}
+
+.gallery li {
+    list-style: none;
+    position: absolute;
+}
+
+.gallery img {
+    margin: auto;
+    height: 50rem;
+    width: 300px;
+    vertical-align: top;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gallery input {
+    display: none;
+}
+
+.gallery label {
+    background-color: #000;
+    bottom: 1rem;
+    cursor: pointer;
+    display: block;
+    height: 1rem;
+    position: absolute;
+    width: 1rem;
+    z-index: 10;
+}
+
+.gallery li:nth-child(1) label {
+    left: 1rem;
+}
+
+.gallery li:nth-child(2) label {
+    left: 4rem;
+}
+
+.gallery li:nth-child(3) label {
+    left: 7rem;
+}
+
+.gallery li:nth-child(4) label {
+    left: 10rem;
+}
+
+.gallery li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
   
