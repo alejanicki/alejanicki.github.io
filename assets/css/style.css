@@ -1,5 +1,21 @@
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
 :root {
-    --primary-color: #1C538E;
+    --primary-color: #431C21;
     --white-color: #ffffff;
     --light-gray-color: #EEEEEE;
     --secondary-color: crimson;
@@ -91,11 +107,14 @@ a {
     align-items: center;
     padding-top: 0rem;
     padding-bottom: 0rem;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 .menu h1 { 
     font-size: 2.3rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    padding: 2rem;
 }
 
 .menu h1 a {
@@ -141,13 +160,23 @@ a {
     padding: 10rem var(--gap);
 }
 
+.home-content h2 {
+    font-size: 12rem;
+    padding-top: 16rem;
+    margin-bottom: 0;
+}
+
+.home-content p {
+    font-size: 2rem;
+    max-width: 65rem;
+}
+
 .intro-content {
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr;
     gap: var(--gap);
     min-height: 100vh;
-    margin-left: 10rem;
 }
 
 .intro-text-content {
@@ -168,8 +197,9 @@ a {
 }
 
 .gallery {
+    padding-top: 10rem;
     padding-left: 5.5rem;
-    display: flex;
+    display: block;
     height: 100vh;
     width: 10rem;
     margin: 0;
@@ -183,8 +213,9 @@ a {
 
 .gallery img {
     margin: auto;
-    height: 50rem;
-    width: 300px;
+    height: 75rem;
+    width: 45rem;
+    padding-bottom: 9.5rem;
     vertical-align: top;
     opacity: 0;
     visibility: hidden;
@@ -196,7 +227,7 @@ a {
 
 .gallery label {
     background-color: #000;
-    bottom: 1rem;
+    bottom: 10rem;
     cursor: pointer;
     display: block;
     height: 1rem;
@@ -226,4 +257,158 @@ a {
     visibility: visible;
     z-index: 10;
 }
+
+.experience-content {
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.experience-content h3 {
+    font-size: 4rem;
+    padding-top: 3rem;
+}
+
+.experience-content h4 {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.experience-content p {
+    font-size: 2rem;
+}
+
+.studies-content {
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100vh;
+    padding-top: 20rem;
+}
+  
+.studies-main-heading {
+    margin-bottom: 2rem;
+}
+  
+.studies-content ol {
+    list-style: none;
+    display:list-item;
+    counter-reset: list-counter;
+    padding-top: 6rem;
+}
+
+.studies-content li {
+    margin: 4rem;
+}
+  
+.studies-content h3 {
+    font-size: 5rem;
+    position: relative;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+  
+.studies-content h3::before {
+    counter-increment: list-counter;
+    content: counter(list-counter);
+    position: absolute;
+    font-size: 9rem;
+    font-style: italic;
+    top: -4rem;
+    left: -4rem;
+    transform: rotate(5deg);
+}
+
+.studies-content h4 {
+    font-size: 3rem;
+}
+
+.studies-content p {
+    font-size: 2rem;
+}
+
+.skills-content {
+    padding-top: 20rem;
+}
+
+.skills-content h3 {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+.skills-content p {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.skills-content i {
+    font-size: 6rem;
+    padding: 1rem;
+}
+
+.certificates-content {
+    padding-top: 20rem;
+}
+
+.certificates-content h2 {
+    padding-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+  }
+  
+  .grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+  }
+
+  .grid p {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+  .contact-content h3 {
+      padding: 3rem;
+      font-size: 5rem;
+    }
+
+  .contact-content a {
+    display: flex;
+      color: var(--white-color);
+    }
+
+  .contact-content h3:hover{
+      animation: bounce 1s;
+    }
+
+  .contact-content img {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 2rem;
+    }
+
+  
+
   
