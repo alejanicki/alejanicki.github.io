@@ -15,13 +15,15 @@
 
 <body>
 
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
   <aside class= "menu white-bg">
     <nav class="menu-content">
       <div>
-        <h1><a href="#home">LOGO</a></h1>
+        <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">LOGO</a></h1>
       </div>
 
-      <ul>
+      <ul onclick="getElementById('close-menu').checked = false;">
         <li><a href="#about">Alessandro</a></li>
         <li><a href="#experience">Experiência</a></li>
         <li><a href="#studies">Estudos</a></li>
@@ -164,5 +166,6 @@
   </div>
   </section>
 
+  <a class="back-to-top" href="#">➤</a>
 </body>
 </html>
