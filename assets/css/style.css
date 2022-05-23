@@ -177,7 +177,7 @@ a {
 }
 
 .home-content h2 {
-    font-size: 12rem;
+    font-size: 8rem;
     margin-bottom: 0;
 }
 
@@ -190,7 +190,6 @@ a {
     position: relative;
     display: grid;
     grid-template-columns: 1.5fr 1.5fr;
-    gap: var(--gap);
     min-height: 100vh;
 }
 
@@ -202,7 +201,6 @@ a {
 }
 
 .intro-text-content h2 {
-    font-size: 5rem;
     text-align: center;
 }
 
@@ -317,7 +315,6 @@ a {
 }
 
 .studies-content h3 {
-    font-size: 5rem;
     position: relative;
     padding-left: 3rem;
     padding-bottom: 2rem;
@@ -436,7 +433,7 @@ a {
     border: 0.1rem solid var(--primary-color);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1050px) {
 
     .intro-content,
     .grid {
@@ -508,26 +505,26 @@ a {
     }
 
     h1 {
-        font-size: 3.6rem;
-    }
-
-    h2 {
         font-size: 3.4rem;
     }
 
-    h3 {
+    h2 {
         font-size: 3.2rem;
     }
 
-    h4 {
+    h3 {
         font-size: 3rem;
     }
 
-    h5 {
+    h4 {
         font-size: 2.8rem;
     }
 
-    h6 {
+    h5 {
         font-size: 2.6rem;
+    }
+
+    h6 {
+        font-size: 2.4rem;
     }
 }
