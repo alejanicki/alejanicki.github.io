@@ -7,10 +7,14 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        background-image: ${props => props.theme.background.backgroundImage};
+        background-position: fixed;
+        background-size: cover;
     }
 
     h1 {
         font-family: "Play", sans-serif;
-        color: orange;
+        font-size: 64px;
+        color: ${(props) => props.theme.color.primary};
     }
-`
+`;
