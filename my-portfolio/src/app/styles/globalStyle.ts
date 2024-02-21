@@ -7,9 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-image: ${props => props.theme.background.backgroundImage};
-        background-position: fixed;
-        background-size: cover;
+        background: ${props => props.theme.color.backgroundColor};
     }
 
     h1 {

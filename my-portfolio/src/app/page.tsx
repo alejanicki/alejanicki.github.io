@@ -4,6 +4,9 @@ import { GlobalStyle } from "./styles/globalStyle";
 import { useState } from "react";
 import light from "@/app/styles/themes/light";
 import dark from "@/app/styles/themes/dark";
+import Footer from "./components/footer/footer";
+import Profile from "./components/profile/profile";
+import Carousel from "./components/carousel/carousel";
 
 export default function App() {
   const [theme, setTheme] = useState(light);
@@ -16,8 +19,9 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <button onClick={switchTheme}>change</button>
-      <h1>TESTE</h1>
-      <p>teste</p>
+      <Profile/>
+      <Carousel/>
+      <Footer/>
     </ThemeProvider>
   );
 }

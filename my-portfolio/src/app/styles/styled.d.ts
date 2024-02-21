@@ -6,10 +6,16 @@ declare module "styled-components" {
 
     color: {
       primary: string;
+      lightestGrey: string;
+      lightGrey: string;
+      darkGrey: string;
+      darkestGrey: string;
+      backgroundColor: string;
+      containerColor: string;
     };
-
-    background: {
-      backgroundImage: string;
+    fonts: {
+      play: string;
+      exo2: string;
     };
   }
 }
