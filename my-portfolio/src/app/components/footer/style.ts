@@ -14,6 +14,7 @@ export const Container = styled.div`
 export const Logo = styled.img`
   height: auto;
   width: auto;
+  margin-right: 10%;
 `;
 
 export const Nav = styled.nav`
@@ -21,14 +22,14 @@ export const Nav = styled.nav`
     text-decoration: none;
     list-style: none;
   }
-  
+
   a {
     cursor: pointer;
   }
 
   a:hover {
     text-decoration: underline;
-    color: ${props => props.theme.color.primary};
+    color: ${(props) => props.theme.color.primary};
   }
 
   ul {
@@ -39,4 +40,8 @@ export const Nav = styled.nav`
   }
 `;
 
-export const Copyright = styled.div``;
+export const Copyright = styled.div`
+  * {
+    font-size: 12px;
+  }
+`;
