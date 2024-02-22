@@ -12,6 +12,7 @@ declare module "styled-components" {
       darkestGrey: string;
       backgroundColor: string;
       containerColor: string;
+      fontColor: string;
     };
     fonts: {
       play: string;

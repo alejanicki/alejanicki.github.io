@@ -1,4 +1,4 @@
-import { Container, Logo, Nav } from "./style";
+import { Container, Copyright, Logo, Nav } from "./style";
 
 export default function Footer() {
   return (
@@ -11,6 +11,7 @@ export default function Footer() {
           <li><a>Instagram</a></li>
         </ul>
       </Nav>
+      <Copyright><p>© 2024 Alessandro Janicki</p></Copyright>
     </Container>
   );
 }

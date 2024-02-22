@@ -18,10 +18,12 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <button onClick={switchTheme}>change</button>
-      <Profile/>
-      <Carousel/>
-      <Footer/>
+      <main>
+        <button onClick={switchTheme}>change</button>
+        <Profile />
+        <Carousel />
+        <Footer />
+      </main>
     </ThemeProvider>
   );
 }
